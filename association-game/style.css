@@ -1,0 +1,122 @@
+html, 
+body {
+    margin: 0px;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+}
+
+h1, h2, p {
+    font-family: 'Montserrat', sans-serif;
+    color: beige;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+header {
+    padding: 10px;
+    text-align: center;
+}
+
+.buffer {
+    height: 2rem;
+}
+
+.word {
+    font-size: 3rem;
+}
+
+.zone {
+    width: 310px; 
+    height: 200px;
+    font-size: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: all 0.2s;
+    /* border: 1px solid #bbb !important; */
+}
+
+.zone:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    -webkit-box-shadow: 0px 0px 7px rgb(189, 189, 189);
+    -moz-box-shadow: 0px 0px 7px rgb(189, 189, 189);
+    -o-box-shadow: 0px 0px 7px rgb(189, 189, 189);
+    box-shadow: 0px 0px 7px rgb(189, 189, 189);
+}
+
+.container {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.green {
+    grid-column: span 2;
+}
+
+.blue {
+    background-color: rgb(45, 97, 255);
+    border-color: rgb(45, 97, 255);;
+}
+
+.pink {
+    background-image: linear-gradient(pink, rgb(236, 56, 74));
+    background-color: pink;
+    border-color: pink;
+}
+
+.yellow {
+    background-image: linear-gradient(yellow, rgb(248, 99, 198));
+    background-color: yellow;
+    border-color: yellow;
+}
+
+.green {
+    background-image: linear-gradient(greenyellow, rgb(224, 232, 139));
+    background-color: greenyellow;
+    border-color: greenyellow;
+}
+
+.red {
+    background-image: linear-gradient(rgb(227, 25, 25), rgb(254, 114, 14));
+    border-color: rgb(211, 57, 57);
+}
+
+.purple {
+    background-image: linear-gradient(rgb(173, 15, 231), rgb(240, 157, 233));
+    border-color: rgb(152, 15, 231);
+}
+
+#class_style {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.navbar {
+    position: sticky;
+    top: 0; /* Adjust the value based on your layout */
+    z-index: 100; /* Ensure it's above other content */
+}
